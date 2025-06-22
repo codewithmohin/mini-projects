@@ -2,91 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevResume - Stylish CSS Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Styled Interactive Form</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="sidebar">
-    <img src="profile.jpg" alt="Profile Photo" class="profile-img" style="width:100px;border-radius:50%;margin-bottom:1rem;">
-    <h2>Mohin Nadaf</h2>
-    <p>Tech Enthusiast | Web Developer</p>
-  </div>
+  <form class="styled-form">
+    <h2>Register</h2>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required />
 
-  <div class="main">
-    <header>Welcome to My DevResume</header>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
 
-    <div class="section">
-      <h3>About Me</h3>
-      <p>I’m a passionate developer currently in my learning phase, building real-world projects and exploring the power of web development.</p>
-    </div>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required />
 
-    <div class="section">
-      <h3>Profile Summary</h3>
-      <p>Motivated web developer with a strong foundation in front-end technologies and a passion for creating visually appealing, user-friendly websites.</p>
-    </div>
-
-    <div class="section">
-      <h3>Skills</h3>
-      <div class="skills">
-        <div class="card">HTML5</div>
-        <div class="card">CSS3</div>
-        <div class="card">Flexbox</div>
-        <div class="card">Responsive Design</div>
-        <div class="card">Git & GitHub</div>
-        <div class="card">JavaScript (Basics)</div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h3>Projects</h3>
-      <div class="projects">
-        <div class="card">To-Do List App</div>
-        <div class="card">Portfolio Website</div>
-        <div class="card">Two-Column Flex Layout</div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h3>Languages</h3>
-      <div class="skills">
-        <div class="card">English</div>
-        <div class="card">Hindi</div>
-        <div class="card">Marathi</div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h3>Contact</h3>
-      <p>Email: mohin@example.com</p>
-      <p>LinkedIn: linkedin.com/in/mohinnadaf</p>
-    </div>
-
-    <div class="section">
-      <h3>Certifications</h3>
-      <ul>
-        <li>Responsive Web Design - freeCodeCamp</li>
-        <li>JavaScript Basics - Coursera</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h3>Hobbies</h3>
-      <ul>
-        <li>Coding</li>
-    </div>
-    <blockquote style="margin:2rem 0;padding:1rem 2rem;background:#f9f9f9;border-left:5px solid #007acc;">
-      "Code is like humor. When you have to explain it, it’s bad." – Cory House
-    </blockquote>
-    <footer>
-      &copy; 2025 Mohin Nadaf. All rights reserved.
-      <br>
-      <a href="https://github.com/codewithmohin" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/mohinnadaf" target="_blank">LinkedIn</a>
-    </footer>
-    <a href="resume.pdf" class="download-btn" download>Download Resume</a>
-  </div>
-  <button onclick="document.body.classList.toggle('dark-theme')" style="position:fixed;bottom:20px;right:20px;">Toggle Theme</button>
+    <button type="submit" class="animated-btn">Submit</button>
+  </form>
 </body>
 </html>

@@ -1,85 +1,120 @@
- * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
+body {
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
 
-    body {
-      display: flex;
-      flex-direction: row;
-      min-height: 100vh;
-      background: linear-gradient(to right, #e0eafc, #cfdef3);
-    }
+.styled-form {
+  background: #fff;
+  padding: 32px 28px 28px 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  width: 340px;
+  position: relative;
+  perspective: 600px;  
+}
 
-    .sidebar {
-      width: 250px;
-      background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      padding: 2rem;
-    }
+.styled-form h2 {
+  text-align: center;
+  margin-bottom: 18px;
+  color: #ff7e5f;
+  letter-spacing: 1px;
+}
 
-    .main {
-      flex-grow: 1;
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
+.styled-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #444;
+}
 
-    header {
-      height: 200px;
-      background-image: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
-      font-weight: 600;
-    }
+.styled-form input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1.5px solid #eee;
+  border-radius: 7px;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+  background: #fafafa;
+}
 
-    .section {
-      padding: 1rem;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
+.styled-form input:focus {
+  border-color: #ff7e5f;
+  box-shadow: 0 0 6px #ff7e5f55;
+  outline: none;
+}
 
-    .skills, .projects {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
+.styled-form input:active {
+  border-color: #feb47b;
+}
 
-    .card {
-      flex: 1 1 calc(33.333% - 1rem);
-      background: radial-gradient(circle, #ffffff, #f1f1f1);
-      padding: 1rem;
-      border-radius: 6px;
-      transition: transform 0.2s;
-    }
+.styled-form input::placeholder {
+  color: #bbb;
+  font-style: italic;
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
+ .styled-form::before {
+  content: "";
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 6px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  opacity: 0.7;
+}
 
-    footer {
-      text-align: center;
-      margin-top: auto;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #555;
-    }
+.styled-form button {
+  width: 100%;
+  padding: 12px 0;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(255,126,95,0.10);
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  z-index: 1;
+}
 
-    @media (max-width: 768px) {
-      body {
-        flex-direction: column;
-      }
-      .sidebar {
-        width: 100%;
-      }
-    }
+ .styled-form button::after {
+  content: "🚀";
+  margin-left: 8px;
+  font-size: 1.1em;
+  vertical-align: middle;
+  transition: transform 0.2s;
+}
+
+.styled-form button:hover {
+  background: linear-gradient(90deg, #feb47b, #ff7e5f);
+  transform: scale(1.06) rotate(-2deg);
+  box-shadow: 0 6px 18px rgba(255,126,95,0.18);
+}
+
+.styled-form button:hover::after {
+  transform: translateY(-2px) scale(1.2);
+}
+
+ .styled-form button:active {
+  transform: scale(0.98) rotateX(12deg);
+  background: linear-gradient(90deg, #ff7e5f 80%, #feb47b 100%);
+}
+
+ .animated-btn {
+  animation: pulse 1.1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 2px 8px rgba(255,126,95,0.10); }
+  50% { box-shadow: 0 6px 22px rgba(255,126,95,0.28); }
+}
