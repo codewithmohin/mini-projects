@@ -22,7 +22,7 @@ body {
   margin-bottom: 18px;
   color: #ff7e5f;
   letter-spacing: 1px;
-}
+}             
 
 .styled-form label {
   display: block;
@@ -118,3 +118,6 @@ body {
   0%, 100% { box-shadow: 0 2px 8px rgba(255,126,95,0.10); }
   50% { box-shadow: 0 6px 22px rgba(255,126,95,0.28); }
 }
+ 
+
+ 
