@@ -47,6 +47,10 @@ html, body {
   transition: background 0.3s, color 0.3s;
 }
 
+.dark-mode {
+  background: #222;
+  color: #eee;
+}
 #nav h3:hover, #nav i:hover {
   background: black;
   color: white;
