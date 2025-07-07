@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-<<<<<<< HEAD
+
   font-family: gilroy, sans-serif;
 }
 
@@ -189,6 +189,8 @@ img:hover {
 }
 
 @media (max-width: 600px) {
+
+
   #main > h1 {
     font-size: 16vw;
     top: 22vw;
@@ -209,7 +211,8 @@ img:hover {
     font-size: 14px;
     left: 2vw;
     padding: 6px 12px;
-=======
+  }
+  
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -376,6 +379,5 @@ nav h3, .nav-menu h3 {
   .about-text {
     font-size: 18px;
     line-height: 30px;
->>>>>>> c6e9b12e9b14f74921cfd19915a293518433990d
-  }
+   }
 }
