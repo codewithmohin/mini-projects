@@ -72,7 +72,7 @@ html, body {
 
 #nav button:hover {
   background: black;
-  color: white;
+  color: rgba(255, 255, 255, 0.486);
 }
 
 #btn2 {
@@ -381,3 +381,9 @@ nav h3, .nav-menu h3 {
     line-height: 30px;
    }
 }
+
+<script>{
+  document.getElementById('dark-mode-toggle').onclick = function() 
+    document.body.classList.toggle('dark-mode');
+  }
+</script>
