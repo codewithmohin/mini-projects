@@ -1,31 +1,65 @@
- *{
+
+ 
+.some-class {
+    font-family: 'Wensley', serif;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- }
- html, body {
-    height: 100%;
-    width: 100%; 
 }
-#main{
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Cooper', sans-serif;
+}
+
+#main {
     height: 100%;
     width: 100%;
     background-color: #fff;
-    position: relative; ;
-}   
-#nav{
-    height: 100px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background-color: red;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: relative;
 }
 
-#nav #part2{
+#nav {
+    height: 100px;
+    width: 100%;
+    font-family: 'Cooper', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: black;
+    position: fixed;
+    top: 0;
+    background-color: rgb(244, 240, 240);
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+#nav > h1 {
+    font-size: 30px;
+ background-color: #fff;     
+    margin-left: 20px;
+}
+ 
+
+#nav #part2 {
     display: flex;
     align-items: center;
-    
+    justify-content: center;
+}
+
+#nav #part2 a {
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+
+ #nav #part2 a:last-child {
+    background-color: white;
+    padding: 7px 18px;
 }
