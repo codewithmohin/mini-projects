@@ -10,10 +10,14 @@
 </head>
 <body>
     <h1>Simple Counter App</h1>
+    <hr>
     <p>Use the buttons to increase or decrease the count.</p>
+    <label for="counter">Current Count:</label>
     <div id="counter" aria-live="polite">Count: 0</div>
-    <button id="incrementBtn">+ Increment</button>
+    <button id="incrementBtn" title="Increase the count">+ Increment</button>
     <button id="decrementBtn">- Decrement</button>
+    <div id="error-message" style="color:red;"></div>
+    <!-- JavaScript for counter functionality -->
     <script src="script.js"></script>
     <footer>
       <p>&copy; 2025 Simple Counter App</p>
