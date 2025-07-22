@@ -6,20 +6,35 @@
     <meta name="description" content="Professional Web Designer and Developer offering premium web services">
     <meta name="keywords" content="web design, web development, SEO, business websites">
     <meta name="author" content="Your Name">
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Web Designer & Developer - Professional Web Services">
+    <meta property="og:description" content="Professional Web Designer and Developer offering premium web services">
+    <meta property="og:image" content="https://yourwebsite.com/og-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@yourtwitterhandle">
     <title>Web Designer & Developer - Professional Web Services</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
 <body>
     
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <header class="site-header">
+        <div class="logo">
+            <a href="/" class="logo-link">
+                <span class="logo-text">WebDev</span>
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <button class="mobile-menu" aria-label="Toggle menu">
+                <span class="menu-bar"></span>
+            </button>
         </nav>
     </header>
     <main>
@@ -27,21 +42,86 @@
             <div class="hero-content">
                 <img src="./hero.png" alt="Web Designer and Developer" class="hero-image"> 
                 <div class="text-content">
+                    <span class="subtitle">Welcome to My Portfolio</span>
                     <h1>Web Designer & Developer</h1>
                     <p class="hero-description">Premium Web Design, Development, and SEO services to help your business stand out.</p>
-                    <button class="cta-button">Get Started</button>
+                    <div class="cta-group">
+                        <button class="cta-button primary">Get Started</button>
+                        <button class="cta-button secondary">View Portfolio</button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>With over 5 years of experience in web development, I create stunning and functional websites that deliver results.</p>
+                        <ul class="skills-list">
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript & React</li>
+                            <li>Node.js & Express</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                    <div class="experience-cards">
+                        <div class="exp-card">
+                            <h3>Frontend Development</h3>
+                            <p>Creating responsive and interactive user interfaces</p>
+                        </div>
+                        <div class="exp-card">
+                            <h3>Backend Development</h3>
+                            <p>Building robust and scalable server solutions</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="#" class="social-link">LinkedIn</a>
-                <a href="#" class="social-link">GitHub</a>
-                <a href="#" class="social-link">Twitter</a>
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="contact-list">
+                    <li><i class="icon-email"></i>hello@webdev.com</li>
+                    <li><i class="icon-phone"></i>+1 234 567 890</li>
+                    <li><i class="icon-location"></i>New York, USA</li>
+                </ul>
             </div>
-            <p>&copy; 2025 Web Designer & Developer. All rights reserved.</p>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="icon-linkedin"></i>LinkedIn</a>
+                    <a href="#" class="social-link"><i class="icon-github"></i>GitHub</a>
+                    <a href="#" class="social-link"><i class="icon-twitter"></i>Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2025 Web Designer & Developer. All rights reserved.</p>
+            <ul class="legal-links">
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/terms">Terms of Service</a></li>
+            </ul>
         </div>
     </footer>
 </body>
