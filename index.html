@@ -29,7 +29,15 @@
             <ul class="nav-list">
                 <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#services" class="nav-link">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#web-design">Web Design</a></li>
+                        <li><a href="#development">Development</a></li>
+                        <li><a href="#seo">SEO</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <button class="mobile-menu" aria-label="Toggle menu">
@@ -109,6 +117,26 @@
                     <p>Optimize your site to rank higher in search results</p>
                     <a href="#" class="learn-more">Learn More →</a>
                 </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <form class="contact-form" action="/submit" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
         </section>
     </main>
