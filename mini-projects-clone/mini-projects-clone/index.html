@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EVS — Electric Vehicle Survey</title>
+  <meta name="description" content="EVS — Electric Vehicle Survey & Public Perception" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap" role="main" aria-labelledby="pageTitle">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">EVS</div>
+        <div>
+          <div style="font-weight:800" id="pageTitle">EVS</div>
+          <div class="muted" style="font-size:13px">Electric Vehicle Survey — Public Perception & Adoption</div>
+        </div>
+      </div>
+
+      <nav aria-label="Primary">
+        <a href="#survey">Survey</a>
+        <a href="#responses">Responses</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <section id="survey" class="hero" aria-labelledby="surveyHeading">
+      <div class="card" id="mainCard">
+        <h1 id="surveyHeading">EVS — Electric Vehicle Survey</h1>
+        <p class="lead">We appreciate your time. This survey collects perceptions, ownership, and barriers around electric vehicles (EVs).</p>
+
+        <form id="evForm" autocomplete="on" novalidate>
+          <label for="name">1. Full name</label>
+          <input id="name" name="name" type="text" placeholder="Your full name" required>
+
+          <label for="email">2. Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+          <div class="row" aria-hidden="false">
+            <div>
+              <label for="age">3. Age group</label>
+              <select id="age" name="age" required>
+                <option value="">Choose...</option>
+                <option>Under 18</option>
+                <option>18-24</option>
+                <option>25-34</option>
+                <option>35-44</option>
+                <option>45-54</option>
+                <option>55-64</option>
+                <option>65+</option>
+              </select>
+            </div>
+            <div>
+              <label for="gender">4. Gender</label>
+              <select id="gender" name="gender" required>
+                <option value="">Choose...</option>
+                <option>Female</option>
+                <option>Male</option>
+                <option>Non-binary</option>
+                <option>Prefer not to say</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="occupation">5. Occupation</label>
+          <input id="occupation" name="occupation" type="text" placeholder="e.g., Student, Engineer, Business Owner" required>
+
+          <label for="own">6. Do you currently own an Electric Vehicle (EV)?</label>
+          <select id="own" name="own" required>
+            <option value="">Choose...</option>
+            <option>Yes — Full EV</option>
+            <option>Yes — Plug-in Hybrid</option>
+            <option>No, but planning to buy</option>
+            <option>No</option>
+          </select>
+
+          <label for="brand">7. If yes, what brand/model? (leave blank if not applicable)</label>
+          <input id="brand" name="brand" type="text" placeholder="e.g., Tesla Model 3, Tata Nexon EV">
+
+          <label for="plan">8. If no, are you planning to buy one? (if not applicable, choose N/A)</label>
+          <select id="plan" name="plan" required>
+            <option value="">Choose...</option>
+            <option>Yes — within 1 year</option>
+            <option>Yes — within 1-3 years</option>
+            <option>Thinking about it (no timeline)</option>
+            <option>No</option>
+            <option>N/A — I already own an EV</option>
+          </select>
+
+          <label>9. What is your main concern(s) about EV adoption? (select all that apply)</label>
+          <div class="grid-2">
+            <label><input type="checkbox" name="concern" value="Charging infrastructure"> Charging infrastructure</label>
+            <label><input type="checkbox" name="concern" value="Range anxiety"> Range anxiety</label>
+            <label><input type="checkbox" name="concern" value="Cost"> Cost</label>
+            <label><input type="checkbox" name="concern" value="Maintenance/Service"> Maintenance / Service</label>
+            <label><input type="checkbox" name="concern" value="Battery lifespan"> Battery lifespan</label>
+            <label><input type="checkbox" name="concern" value="Resale value"> Resale value</label>
+            <label><input type="checkbox" name="concern" value="Charging time"> Charging time</label>
+            <label><input type="checkbox" name="concern" value="Other"> Other</label>
+          </div>
+
+          <label for="incentives">10. How familiar are you with government EV incentives? (1 = Not at all, 5 = Very familiar)</label>
+          <select id="incentives" name="incentives" required>
+            <option value="">Choose...</option>
+            <option>1 — Not at all</option>
+            <option>2</option>
+            <option>3 — Somewhat</option>
+            <option>4</option>
+            <option>5 — Very familiar</option>
+          </select>
+
+          <label for="env">11. What do you think about the environmental impact of EVs?</label>
+          <select id="env" name="env" required>
+            <option value="">Choose...</option>
+            <option>Positive — EVs reduce emissions</option>
+            <option>Neutral — Mixed impact</option>
+            <option>Negative — Not necessarily better</option>
+            <option>Unsure</option>
+          </select>
+
+          <label for="usage">12. How often do you use private vs public transport?</label>
+          <select id="usage" name="usage" required>
+            <option value="">Choose...</option>
+            <option>Mostly private (car/motorbike)</option>
+            <option>Mostly public transport</option>
+            <option>Mix of both</option>
+            <option>Rarely use motorized transport</option>
+          </select>
+
+          <label for="features">13. What features or improvements would encourage you to switch to EVs? (choose up to 3)</label>
+          <div class="grid-2">
+            <label><input type="checkbox" name="feature" value="More charging stations"> More charging stations</label>
+            <label><input type="checkbox" name="feature" value="Lower purchase price"> Lower purchase price</label>
+            <label><input type="checkbox" name="feature" value="Longer range"> Longer range</label>
+            <label><input type="checkbox" name="feature" value="Faster charging"> Faster charging</label>
+            <label><input type="checkbox" name="feature" value="Better service network"> Better service network</label>
+            <label><input type="checkbox" name="feature" value="Incentives/subsidies"> Incentives / subsidies</label>
+            <label><input type="checkbox" name="feature" value="Improved resale value"> Improved resale value</label>
+            <label><input type="checkbox" name="feature" value="Other"> Other</label>
+          </div>
+
+          <label for="comments">14. Additional comments or suggestions (optional)</label>
+          <textarea id="comments" name="comments" placeholder="Share any other thoughts..."></textarea>
+
+          <div class="actions-row">
+            <button type="submit" class="btn" id="submitBtn">Submit</button>
+            <div id="formMsg" class="muted" aria-live="polite"></div>
+          </div>
+        </form>
+
+        <div id="afterActions" class="hidden">
+          <div class="success" id="thanksMsg">Thank you — your response has been recorded.</div>
+          <div class="controls">
+            <button id="downloadCsv" class="btn" title="Download all responses as CSV">Download responses (CSV)</button>
+            <button id="clearLocal" class="btn danger">Clear stored responses</button>
+            <div class="muted-small">Responses are stored locally in your browser (no backend). You can plug in a Google Form or server if you want remote storage.</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card" aria-labelledby="about">
+        <h3 id="about">About this survey</h3>
+        <p class="muted">This EVS template is a standalone site for collecting public perception and adoption signals around electric vehicles. It works offline — responses are saved in browser localStorage and can be downloaded as CSV. Replace or extend the submit handler to send data to Google Forms, Google Sheets, or your own backend.</p>
+
+        <h4>Quick integrations</h4>
+        <ol class="muted">
+          <li>Create a Google Form and inspect the page to find each field's entry ID (entry.&lt;id&gt;).</li>
+          <li>Set <code>GOOGLE_FORM_ACTION</code> and <code>GOOGLE_FORM_MAP</code> in <code>script.js</code> to map names to entry IDs.</li>
+          <li>Or POST JSON to your backend by modifying the optional fetch section in <code>script.js</code>.</li>
+        </ol>
+
+        <hr>
+        <h4>Privacy</h4>
+        <p class="muted">No data leaves your browser by default. If you enable Google Form or backend integration, follow privacy rules relevant to your users.</p>
+      </aside>
+    </section>
+
+    <section id="responses" style="margin-top:18px">
+      <div class="card">
+        <h3>Collected responses (local)</h3>
+        <p class="muted" style="margin-top:0">Responses are stored in your browser's localStorage under the key <code>evs_responses</code>.</p>
+
+        <div id="responsesArea">
+          <p class="muted">No responses yet — submit the survey to see them listed here.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <strong>EVS</strong> — Electric Vehicle Survey</div>
+      <div class="muted">Built with ♥ — Save as <code>index.html</code></div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
